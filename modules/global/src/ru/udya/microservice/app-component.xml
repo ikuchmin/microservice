@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<app-component xmlns="http://schemas.haulmont.com/cuba/app-component.xsd"
+               dependsOn="com.haulmont.cuba">
+
+    <module name="global" blocks="*">
+        <artifact name="microservice-global" appJar="true"/>
+
+        <property name="cuba.persistenceConfig" value="+ru/udya/microservice/persistence.xml"/>
+        <property name="cuba.metadataConfig" value="+ru/udya/microservice/metadata.xml"/>
+        <property name="cuba.viewsConfig" value="+ru/udya/microservice/views.xml"/>
+    </module>
+    <module name="core" dependsOn="global" blocks="core">
+        <artifact name="microservice-core" appJar="true"/>
+
+        <property name="cuba.springContextConfig" value="+ru/udya/microservice/spring.xml"/>
+        <property name="cuba.mainMessagePack" value="+ru.udya.microservice.core"/>
+    </module>
+    <module name="web" dependsOn="global" blocks="web">
+        <artifact name="microservice-web" appJar="true"/>
+        <artifact name="microservice-web" classifier="web" ext="zip" configuration="webcontent"/>
+
+        <property name="cuba.springContextConfig" value="+ru/udya/microservice/web-spring.xml"/>
+        <property name="cuba.dispatcherSpringContextConfig" value="+ru/udya/microservice/web-dispatcher-spring.xml"/>
+        <property name="cuba.windowConfig" value="+ru/udya/microservice/web-screens.xml"/>
+        <property name="cuba.menuConfig" value="+ru/udya/microservice/web-menu.xml"/>
+        <property name="cuba.permissionConfig" value="+ru/udya/microservice/web-permissions.xml"/>
+        <property name="cuba.mainMessagePack" value="+ru.udya.microservice.web"/>
+    </module>
+</app-component>
