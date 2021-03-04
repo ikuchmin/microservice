@@ -7,4 +7,6 @@
         <context:exclude-filter type="regex" expression="ru\.udya\.microservice\.portal\..*"/>
     </context:component-scan>
 
+    <bean id="restapi_RestAPIServletInitializer" class="ru.udya.microservice.restapi.init.MicroserviceRestAPIServletInitializer" />
+
 </beans>
