@@ -3,9 +3,11 @@
 Cuba Microservice it is appComponent connected as microservice, like a remote app.
 It doesn't work without Shared-Session AppComponent (https://github.com/ikuchmin/shared-session)
 
-## How to use it
+## How to use it (Component + Plugin) 
 
-Add dependency to your CUBA project as microservice instead of appComponent:
+1. Add dependency to your CUBA project a microservice as appComponent
+
+2. Replace type of dependency as showing below
 ```
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
@@ -14,6 +16,8 @@ dependencies {
     microservice('ru.example:app-global:0.1-SNAPSHOT')
 }
 ``` 
+
+TODO: add a section to configure spring.xml 
 
 ## Getting started
 
