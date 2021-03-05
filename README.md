@@ -8,14 +8,14 @@ It doesn't work without Shared-Session AppComponent (https://github.com/ikuchmin
 1. Add dependency to your CUBA project a microservice as appComponent
 
 2. Replace type of dependency as showing below
-```
-dependencies {
-    appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
-    appComponent('ru.udya.microservice:microservice-global:0.1-SNAPSHOT')
-
-    microservice('ru.example:app-global:0.1-SNAPSHOT')
-}
-``` 
+    ```
+    dependencies {
+        appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
+        appComponent('ru.udya.microservice:microservice-global:0.1-SNAPSHOT')
+    
+        microservice('ru.example:app-global:0.1-SNAPSHOT')
+    }
+    ``` 
 
 TODO: add a section to configure spring.xml 
 
