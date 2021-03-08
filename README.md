@@ -71,7 +71,7 @@ Apply microservice plugin (https://github.com/ikuchmin/microservice-gradle-plugi
    task from MicroservicePlugin instead of CubaUberJarBuilding. The reason the same as
    in Deployment topic below.
    ```groovy
-   task buildSingleUberJar(type: MicroserviceCubaUberJarBuilding) {
+   task buildSingleUberJar(type: ru.udya.microservice.gradle.MicroserviceCubaUberJarBuilding) {
        singleJar = true
        logbackConfigurationFile = 'etc/logback.xml'
        appProperties = ['cuba.automaticDatabaseUpdate': true]
