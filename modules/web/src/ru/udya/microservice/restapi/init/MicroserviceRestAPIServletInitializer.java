@@ -17,7 +17,7 @@ import javax.servlet.ServletException;
 import java.util.EnumSet;
 
 /**
- * DO NOT FORGET THE SAME CLASS IN WEB MODULE
+ * DO NOT FORGET THE SAME CLASS IN PORTAL MODULE
  */
 public class MicroserviceRestAPIServletInitializer extends RestAPIServletInitializer {
 

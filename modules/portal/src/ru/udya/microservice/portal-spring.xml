@@ -7,6 +7,8 @@
         <context:exclude-filter type="regex" expression="ru\.udya\.microservice\.portal\..*"/>
     </context:component-scan>
 
+    <bean id="cuba_MetadataBuildSupport" class="ru.udya.microservice.core.sys.MicroserviceMetadataBuildSupport"/>
+
     <bean id="restapi_RestAPIServletInitializer" class="ru.udya.microservice.restapi.init.MicroserviceRestAPIServletInitializer" />
 
 </beans>

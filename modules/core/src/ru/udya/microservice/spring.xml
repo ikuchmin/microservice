@@ -5,4 +5,5 @@
     <!-- Annotation-based beans -->
     <context:component-scan base-package="ru.udya.microservice"/>
 
+    <bean id="cuba_MetadataBuildSupport" class="ru.udya.microservice.core.sys.MicroserviceMetadataBuildSupport"/>
 </beans>

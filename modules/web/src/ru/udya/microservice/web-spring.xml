@@ -8,4 +8,8 @@
     
     <gui:screens base-packages="ru.udya.microservice.web"/>
 
+    <bean id="cuba_MetadataBuildSupport" class="ru.udya.microservice.core.sys.MicroserviceMetadataBuildSupport"/>
+
+    <bean id="restapi_RestAPIServletInitializer" class="ru.udya.microservice.restapi.init.MicroserviceRestAPIServletInitializer" />
+
 </beans>
