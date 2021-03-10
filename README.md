@@ -55,6 +55,8 @@ Apply microservice plugin (https://github.com/ikuchmin/microservice-gradle-plugi
        apply(plugin: 'cuba')
        apply(plugin: 'ru.udya.microservice.microservice-plugin')
    ```
+
+5. Add appComponent microservice(this project) to your project 
    
 5. Replace `CubaDeployment` with `MicroserviceCubaDeployment`. It is needed because
    deployment task must collect dependencies from appComponent and microservice
