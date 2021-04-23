@@ -13,6 +13,7 @@
         <artifact name="microservice-core" appJar="true"/>
 
         <property name="cuba.springContextConfig" value="+ru/udya/microservice/spring.xml"/>
+        <property name="cuba.remotingSpringContextConfig" value="+ru/udya/microservice/remoting-spring.xml"/>
         <property name="cuba.mainMessagePack" value="+ru.udya.microservice.core"/>
     </module>
     <module name="web" dependsOn="global" blocks="web">
